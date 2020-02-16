@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 def render_homepage():
     render_greeting_text = """
-    <div style="height: 100px; width: 100px; background-color: 'red'">
+    <div style="height: 100px; width: 100px; background-color: red">
         Hello Welcome to Azure Python Flask Application
     </div>
     """
@@ -13,7 +13,7 @@ def render_homepage():
 
 
 @app.route('/')
-def say_hello():
+def display_homepage():
     return render_homepage()
 
 
@@ -22,8 +22,8 @@ def render_details_page():
     return details_page
 
 
-@app.route('details')
-def say_hello():
+@app.route('/details')
+def display_details():
     return render_details_page()
 
 
