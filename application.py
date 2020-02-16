@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def say_hello():
-    return "Hello Farhan!"
+    return "Hello Farhan! This is direct integration from GitHub"
 
 
 if __name__ == '__main__':
